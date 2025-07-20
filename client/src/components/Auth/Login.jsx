@@ -42,7 +42,16 @@ export default function Login({ setUser }) {
         />
         <button type="submit">Login</button>
       </form>
-      <p>Don't have an account? <button onClick={() => navigate('/register')}>Register</button></p>
+      <p>
+        Don't have an account?{' '}
+        <span
+          onClick={() => navigate('/register')}
+          style={{ color: '#4CAF50', cursor: 'pointer', marginLeft: '4px', fontWeight: 'bold' }}
+        >
+          Register
+        </span>
+      </p>
+
     </div>
   );
 }
